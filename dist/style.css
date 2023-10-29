@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: grid;
+    grid-template: 1fr 9fr / 2fr 5fr;
+}
+
+header {
+    grid-column: span 2;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    align-items: center;
+    gap: 16px;
+    padding: 0 16px;
+    background-color: #27272a;
+    color: #e4e4e7;
+    font-size: 48px;
+}
+
+svg {
+    height: 1.5em;
+    fill: #e4e4e7;
+}
+
+.sidebar {
+    background-color: #d4d4d8;
+}
+
+.content {
+    background-color: #f4f4f5;
+}
