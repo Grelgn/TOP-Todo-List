@@ -13,12 +13,12 @@ export default class Project {
 }
 
 export function newProject() {
-    const dialog = document.querySelector("dialog");
+    const dialog = document.querySelector("#new-project");
     const newProject = document.querySelector(".sidebar > button");
     newProject.addEventListener('click', () => {
         dialog.showModal();
     })
-    const projectName = document.querySelector("#name");
+    const projectName = document.querySelector("#project-name");
     const addProject = document.querySelector("#addProject");
     addProject.addEventListener('click', () => {
         projectArray.push(new Project(projectName.value));
