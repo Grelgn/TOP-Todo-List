@@ -13,8 +13,19 @@
         ToDo
     </header>
     <div class="sidebar">
+        <div class="projects"></div>
         <button>+ New Project</button>
     </div>
     <div class="content"></div>
+    <dialog class="new-project">
+        <b>New Project</b>
+        <br><br>
+        <form id="projectForm" method="dialog">
+            <label for="name">Project Name:</label>
+            <input type="text" name="name" id="name">
+            <button>Cancel</button>
+            <button id="addProject">Add New Project</button>
+        </form>
+    </dialog>
 </body>
 </html>
