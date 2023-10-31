@@ -29,5 +29,6 @@ export function newTodo() {
     addTodo.addEventListener('click', () => {
         currentProject.todoArray.push(new ToDo(todoName.value, todoDueDate.value, todoPriority.value, todoDescription.value));
         pageLoad();
+
     })
 }

@@ -1,4 +1,5 @@
-import { project1, todo1, projectArray, currentProject } from ".";
+import { projectArray, currentProject } from ".";
+import { switchProject } from "./project";
 
 export default function pageLoad() {
     const projects = document.querySelector(".projects");
@@ -30,8 +31,5 @@ export default function pageLoad() {
         todos.appendChild(todo);
     });
 
-    // const newTodo = document.createElement("button");
-    // newTodo.textContent = "+ New Todo";
-    // newTodo.classList.add("todo-btn");
-    // content.appendChild(newTodo);
+    switchProject();
 }

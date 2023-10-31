@@ -1,4 +1,4 @@
-import { projectArray } from ".";
+import { currentProject, projectArray } from ".";
 import pageLoad from "./page-load";
 
 export default class Project {
@@ -24,4 +24,17 @@ export function newProject() {
         projectArray.push(new Project(projectName.value));
         pageLoad();
     })
+}
+
+export function switchProject() {
+    const projects = document.querySelectorAll(".project");
+    let id = 0;
+    projects.forEach(element => {
+        element.id = 'project' + id;
+        id++;
+        element.addEventListener('click', () => {
+            currentProject = projectArray[element.id.charAt(element.id.length - 1)];
+            pageLoad();
+        })
+    });
 }

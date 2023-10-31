@@ -39,6 +39,10 @@ header svg {
     grid-template-rows: repeat(9, 1fr)
 }
 
+.project {
+    cursor: pointer;
+}
+
 button {
     font-weight: bold;
     border: none;
@@ -58,7 +62,6 @@ button {
     padding: 16px 32px;
     display: grid;
     grid-template-rows: 10fr 1fr;
-    align-items: center;
 }
 
 .todos {
