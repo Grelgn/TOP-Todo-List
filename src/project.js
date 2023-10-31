@@ -38,3 +38,14 @@ export function switchProject() {
         })
     });
 }
+
+export function deleteProject() {
+    const button = document.querySelector(".delete-project");
+    button.addEventListener('click', () => {
+        const index = projectArray.indexOf(currentProject);
+        projectArray.splice(index, 1);
+        pageLoad();
+        const todos = document.querySelector(".todos");
+        todos.innerHTML = "";
+    })
+}

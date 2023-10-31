@@ -29,6 +29,19 @@ export function newTodo() {
     addTodo.addEventListener('click', () => {
         currentProject.todoArray.push(new ToDo(todoName.value, todoDueDate.value, todoPriority.value, todoDescription.value));
         pageLoad();
-
     })
+}
+
+export function deleteTodo() {
+    const button = document.querySelectorAll(".delete-todo");
+    let id = 0;
+    button.forEach(element => {
+        element.id = 'todo' + id;
+        id++;
+        element.addEventListener('click', () => {
+            let index = element.id.charAt(element.id.length - 1);
+            currentProject.todoArray.splice(index, 1);
+            pageLoad();
+        })
+    });
 }

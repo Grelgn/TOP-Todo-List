@@ -66,6 +66,7 @@ button {
 
 .todos {
     display: grid;
+    grid-template-columns: 9fr 1fr;
     grid-template-rows: repeat(9, 1fr);
     align-items: center;
     gap: 16px;
@@ -78,6 +79,7 @@ button {
     grid-template-columns: 1fr 12fr 5fr 1fr 1fr;
     gap: 16px;
     align-items: center;
+    grid-column: span 2;
 }
 
 .low {
@@ -100,6 +102,7 @@ button {
 .content svg {
     height: 1.5em;
     justify-self: end;
+    cursor: pointer;
 }
 
 .checkbox {
@@ -130,4 +133,10 @@ form button {
     width: 100px;
     padding: 8px;
     height: 36px;
+}
+
+.delete-project {
+    background-color: #ef4444;
+    padding: 8px;
+    width: 120px;
 }
