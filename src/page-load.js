@@ -42,4 +42,6 @@ export default function pageLoad() {
     deleteProject();
     deleteTodo();
     editTodo();
+
+    localStorage.setItem('savedData', JSON.stringify(projectArray));
 }

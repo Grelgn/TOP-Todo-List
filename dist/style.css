@@ -76,7 +76,7 @@ button {
     background-color: #d4d4d8;
     padding: 20px 20px;
     display: grid;
-    grid-template-columns: 1fr 5fr 8fr 2fr 1fr 1fr;
+    grid-template-columns: 1fr 5fr 8fr 4fr 1fr 1fr;
     gap: 16px;
     align-items: center;
     grid-column: span 2;
